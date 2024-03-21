@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Questrial", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  background: black;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 15px 40px;
+  border: 2px solid #051c2e;
+  border-radius: 5px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 100ms 300ms;
+  -o-transition: 100ms 300ms;
+  transition: 100ms 300ms;
+}
+
+.btn:hover {
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.btn__sass::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #cf649a;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 40px 40px 0 0;
+  -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+  box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+}
+
+.btn__sass:hover::before {
+  height: 180%;
+}
+
+.btn__sass:hover {
+  -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+  box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+}
+
+.btn__html::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #df4b25;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 40px 40px 0 0;
+  -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+}
+
+.btn__html:hover::before {
+  height: 180%;
+}
+
+.btn__html:hover {
+  -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+}
+
+.btn__css::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #3596cf;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  bottom: 0;
+  border-radius: 40px 40px 0 0;
+  -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+  box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+}
+
+.btn__css:hover::before {
+  height: 180%;
+}
+
+.btn__css:hover {
+  -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+  box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+}
